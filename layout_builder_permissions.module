@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains layout_builder_permissions.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function layout_builder_permissions_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the layout_builder_permissions module.
+    case 'help.page.layout_builder_permissions':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides granular permissions for Layout Builder.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

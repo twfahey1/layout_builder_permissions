@@ -1,0 +1,7 @@
+name: 'Layout Builder Permissions'
+type: module
+description: 'Provides granular permissions for Layout Builder.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - layout_builder
